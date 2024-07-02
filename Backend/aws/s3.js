@@ -3,10 +3,10 @@ dotenv.config();
 import S3 from 'aws-sdk/clients/s3.js';
 import fs from "fs"
 
-const bucketName = `memory-images-luf`; //process.env.S3_BUCKET_NAME;
-const region = `eu-north-1`;//process.env.S3_BUCKET_REGION;
-const accessKeyId = `AKIAQ3EGWF3IFAK2MQ4K`; //process.env.S3_ACCESS_KEY;
-const secretAccessKey = `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`;//process.env.S3_SECRET_ACCESS_KEY;
+const bucketName = process.env.S3_BUCKET_NAME;
+const region = process.env.S3_BUCKET_REGION;
+const accessKeyId = process.env.S3_ACCESS_KEY;
+const secretAccessKey = process.env.S3_SECRET_ACCESS_KEY;
 
 const s3 = new S3({
     region, 

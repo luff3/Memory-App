@@ -1,17 +1,3 @@
-// import multer from "multer"
-
-// export const upload = (req, res, next) => {
-
-//     const upload = multer({dest: "uploads/"})
-//     try {
-//         const file = upload.single('myimage');
-//         req.file = file;
-//         next();
-
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
 
 import multer from "multer";
 
